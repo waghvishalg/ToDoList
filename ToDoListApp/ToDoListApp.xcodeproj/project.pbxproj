@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA60C8F42B46F862008CD745 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60C8F32B46F862008CD745 /* User.swift */; };
+		AA60C8F62B46F86C008CD745 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60C8F52B46F86C008CD745 /* ToDoList.swift */; };
 		AAFB358B2B46CEE70091C658 /* ToDoListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB358A2B46CEE70091C658 /* ToDoListAppApp.swift */; };
 		AAFB358D2B46CEE70091C658 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB358C2B46CEE70091C658 /* MainView.swift */; };
 		AAFB358F2B46CEE90091C658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFB358E2B46CEE90091C658 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA60C8F32B46F862008CD745 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AA60C8F52B46F86C008CD745 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		AAFB35872B46CEE70091C658 /* ToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFB358A2B46CEE70091C658 /* ToDoListAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListAppApp.swift; sourceTree = "<group>"; };
 		AAFB358C2B46CEE70091C658 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 		AAFB359F2B46D2220091C658 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AA60C8F32B46F862008CD745 /* User.swift */,
+				AA60C8F52B46F86C008CD745 /* ToDoList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,8 +234,10 @@
 			files = (
 				AAFB35AE2B46F1330091C658 /* LoginView.swift in Sources */,
 				AAFB358D2B46CEE70091C658 /* MainView.swift in Sources */,
+				AA60C8F62B46F86C008CD745 /* ToDoList.swift in Sources */,
 				AAFB35B42B46F1670091C658 /* MainViewViewModel.swift in Sources */,
 				AAFB35A82B46F0EF0091C658 /* ProfileView.swift in Sources */,
+				AA60C8F42B46F862008CD745 /* User.swift in Sources */,
 				AAFB35B02B46F13E0091C658 /* RegisterView.swift in Sources */,
 				AAFB35AA2B46F0FD0091C658 /* ToDoListView.swift in Sources */,
 				AAFB35BE2B46F1B10091C658 /* RegisterViewViewModel.swift in Sources */,
