@@ -11,6 +11,9 @@
 		AAFB358D2B46CEE70091C658 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB358C2B46CEE70091C658 /* ContentView.swift */; };
 		AAFB358F2B46CEE90091C658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFB358E2B46CEE90091C658 /* Assets.xcassets */; };
 		AAFB35922B46CEE90091C658 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFB35912B46CEE90091C658 /* Preview Assets.xcassets */; };
+		AAFB359A2B46D1C50091C658 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = AAFB35992B46D1C50091C658 /* FirebaseAnalytics */; };
+		AAFB359C2B46D1C50091C658 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AAFB359B2B46D1C50091C658 /* FirebaseFirestore */; };
+		AAFB359E2B46D1C50091C658 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAFB359D2B46D1C50091C658 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFB359A2B46D1C50091C658 /* FirebaseAnalytics in Frameworks */,
+				AAFB359C2B46D1C50091C658 /* FirebaseFirestore in Frameworks */,
+				AAFB359E2B46D1C50091C658 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = ToDoListApp;
+			packageProductDependencies = (
+				AAFB35992B46D1C50091C658 /* FirebaseAnalytics */,
+				AAFB359B2B46D1C50091C658 /* FirebaseFirestore */,
+				AAFB359D2B46D1C50091C658 /* FirebaseFirestoreSwift */,
+			);
 			productName = ToDoListApp;
 			productReference = AAFB35872B46CEE70091C658 /* ToDoListApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = AAFB357E2B46CEE70091C658;
+			packageReferences = (
+				AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AAFB35882B46CEE70091C658 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,7 +294,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Vishal-Wagh.ToDoListApp";
+				PRODUCT_BUNDLE_IDENTIFIER = VishalWagh.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -309,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Vishal-Wagh.ToDoListApp";
+				PRODUCT_BUNDLE_IDENTIFIER = VishalWagh.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,6 +353,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAFB35992B46D1C50091C658 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		AAFB359B2B46D1C50091C658 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AAFB359D2B46D1C50091C658 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAFB357F2B46CEE70091C658 /* Project object */;
 }
