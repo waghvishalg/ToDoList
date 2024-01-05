@@ -46,7 +46,6 @@ struct LoginView: View {
                     }
                 }
                 .padding(.bottom, 100)
-                Spacer()
             }
             .offset(y: 50)
         }
