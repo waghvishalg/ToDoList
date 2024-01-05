@@ -13,42 +13,44 @@ struct LoginView: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            
-            // login Form
-            Form {
-                TextField("Email Address", text: $email)
-                TextField("Password", text: $password)
+        NavigationView {
+            VStack {
+                // Header
+                HeaderView()
                 
-                Button {
-                    // Login click
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.blue)
-                        Text("Log in")
-                            .bold()
-                            .foregroundColor(.white)
-
+                // login Form
+                Form {
+                    TextField("Email Address", text: $email)
+                    TextField("Password", text: $password)
+                    
+                    Button {
+                        // Login click
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(.blue)
+                            Text("Log In")
+                                .bold()
+                                .foregroundColor(.white)
+                        }
+                    }
+                    .padding()
+                }
+                .textFieldStyle(DefaultTextFieldStyle())
+                .padding()
+                
+                // Create Account
+                VStack(spacing: 8) {
+                    Text("New Account here?")
+                    NavigationLink("Create an account") {
+                        RegisterView()
                     }
                 }
+                .padding(.bottom, 50)
+                
+             
+                Spacer()
             }
-            .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding()
-            
-            // Create Account
-            VStack(spacing: 8) {
-                Text("New Account here?")
-                Button("Create an account") {
-                    // Registration screen
-                }
-            }
-            .padding(.bottom, 50)
-            
-         
-            Spacer()
         }
     }
 }
