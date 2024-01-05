@@ -11,6 +11,7 @@
 		AA60C8F62B46F86C008CD745 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60C8F52B46F86C008CD745 /* ToDoListItem.swift */; };
 		AA60C8F82B47DF20008CD745 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60C8F72B47DF20008CD745 /* HeaderView.swift */; };
 		AA60C8FA2B47F7AE008CD745 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60C8F92B47F7AE008CD745 /* TLButton.swift */; };
+		AA60C8FD2B481F54008CD745 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA60C8FC2B481F54008CD745 /* FirebaseAuth */; };
 		AAFB358B2B46CEE70091C658 /* ToDoListAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB358A2B46CEE70091C658 /* ToDoListAppApp.swift */; };
 		AAFB358D2B46CEE70091C658 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB358C2B46CEE70091C658 /* MainView.swift */; };
 		AAFB358F2B46CEE90091C658 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFB358E2B46CEE90091C658 /* Assets.xcassets */; };
@@ -68,17 +69,26 @@
 				AAFB359A2B46D1C50091C658 /* FirebaseAnalytics in Frameworks */,
 				AAFB359C2B46D1C50091C658 /* FirebaseFirestore in Frameworks */,
 				AAFB359E2B46D1C50091C658 /* FirebaseFirestoreSwift in Frameworks */,
+				AA60C8FD2B481F54008CD745 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA60C8FB2B481F54008CD745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAFB357E2B46CEE70091C658 = {
 			isa = PBXGroup;
 			children = (
 				AAFB35892B46CEE70091C658 /* ToDoListApp */,
 				AAFB35882B46CEE70091C658 /* Products */,
+				AA60C8FB2B481F54008CD745 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +189,7 @@
 				AAFB35992B46D1C50091C658 /* FirebaseAnalytics */,
 				AAFB359B2B46D1C50091C658 /* FirebaseFirestore */,
 				AAFB359D2B46D1C50091C658 /* FirebaseFirestoreSwift */,
+				AA60C8FC2B481F54008CD745 /* FirebaseAuth */,
 			);
 			productName = ToDoListApp;
 			productReference = AAFB35872B46CEE70091C658 /* ToDoListApp.app */;
@@ -470,6 +481,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AA60C8FC2B481F54008CD745 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		AAFB35992B46D1C50091C658 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AAFB35982B46D1C50091C658 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
