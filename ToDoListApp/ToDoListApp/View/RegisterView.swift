@@ -20,7 +20,12 @@ struct RegisterView: View {
             
             Form {
                 TextField("User name", text: $name)
+                    .autocorrectionDisabled()
+                
                 TextField("Email id", text: $email)
+                    .autocorrectionDisabled()
+                    .autocapitalization(.none)
+                
                 SecureField("Create password", text: $password)
                 
                 TLButton(title: "Create Account",

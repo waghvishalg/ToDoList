@@ -21,6 +21,7 @@ struct LoginView: View {
                 // login Form
                 Form {
                     TextField("Email Address", text: $email)
+                        .autocapitalization(.none)
                     SecureField("Password", text: $password)
                     
                     TLButton(title: "Log In",
