@@ -16,28 +16,19 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(title: "To Do List", SubTitle: "Get things done", angle: 15, backgroundColor: .pink)
                 
                 // login Form
                 Form {
                     TextField("Email Address", text: $email)
-                    TextField("Password", text: $password)
+                    SecureField("Password", text: $password)
                     
-                    Button {
-                        // Login click
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            Text("Log In")
-                                .bold()
-                                .foregroundColor(.white)
-                        }
+                    TLButton(title: "Log In", backgroundColor: .blue) {
+                        // Login action
                     }
-                    .padding()
                 }
                 .textFieldStyle(DefaultTextFieldStyle())
-                .padding()
+                .offset(y: -50)
                 
                 // Create Account
                 VStack(spacing: 8) {
@@ -46,11 +37,10 @@ struct LoginView: View {
                         RegisterView()
                     }
                 }
-                .padding(.bottom, 50)
-                
-             
+                .padding(.bottom, 100)
                 Spacer()
             }
+            .offset(y: 50)
         }
     }
 }
