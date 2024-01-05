@@ -27,6 +27,7 @@ struct RegisterView: View {
                          backgroundColor: .green) {
                     // Sing up action
                 }
+                  .padding()
             }
         }
     }

@@ -23,9 +23,11 @@ struct LoginView: View {
                     TextField("Email Address", text: $email)
                     SecureField("Password", text: $password)
                     
-                    TLButton(title: "Log In", backgroundColor: .blue) {
+                    TLButton(title: "Log In",
+                             backgroundColor: .blue) {
                         // Login action
                     }
+                     .padding()
                 }
                 .textFieldStyle(DefaultTextFieldStyle())
                 .offset(y: -50)
