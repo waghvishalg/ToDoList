@@ -149,12 +149,12 @@
 			isa = PBXGroup;
 			children = (
 				AAFB35B32B46F1670091C658 /* MainViewViewModel.swift */,
+				AAFB35BD2B46F1B10091C658 /* RegisterViewViewModel.swift */,
+				AAFB35BB2B46F1A50091C658 /* LoginViewViewModel.swift */,
 				AAFB35B52B46F16E0091C658 /* ProfileViewViewModel.swift */,
 				AAFB35B72B46F17D0091C658 /* ToDoListViewViewModel.swift */,
-				AAFB35B92B46F18D0091C658 /* NewItemViewViewModel.swift */,
-				AAFB35BB2B46F1A50091C658 /* LoginViewViewModel.swift */,
-				AAFB35BD2B46F1B10091C658 /* RegisterViewViewModel.swift */,
 				AAFB35BF2B46F1C00091C658 /* ToDoListItemViewViewModel.swift */,
+				AAFB35B92B46F18D0091C658 /* NewItemViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -163,12 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				AAFB358C2B46CEE70091C658 /* MainView.swift */,
-				AAFB35A72B46F0EF0091C658 /* ProfileView.swift */,
-				AAFB35A92B46F0FD0091C658 /* ToDoListView.swift */,
-				AAFB35AB2B46F12A0091C658 /* NewItemView.swift */,
-				AAFB35AD2B46F1330091C658 /* LoginView.swift */,
 				AAFB35AF2B46F13E0091C658 /* RegisterView.swift */,
+				AAFB35A72B46F0EF0091C658 /* ProfileView.swift */,
+				AAFB35AD2B46F1330091C658 /* LoginView.swift */,
+				AAFB35A92B46F0FD0091C658 /* ToDoListView.swift */,
 				AAFB35B12B46F14E0091C658 /* ToDoListItemView.swift */,
+				AAFB35AB2B46F12A0091C658 /* NewItemView.swift */,
 				AA60C8F72B47DF20008CD745 /* HeaderView.swift */,
 				AA60C8F92B47F7AE008CD745 /* TLButton.swift */,
 			);
