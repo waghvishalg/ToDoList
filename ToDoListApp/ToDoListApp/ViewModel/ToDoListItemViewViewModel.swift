@@ -10,4 +10,8 @@ import Foundation
 /// ViewModel for a single to do list items view (each row in items list)
 class ToDoListItemViewViewModel: ObservableObject {
     init() {}
+    
+    func markDelete(item: ToDoListItem) {
+        
+    }
 }
