@@ -20,17 +20,14 @@ class RegisterViewViewModel: ObservableObject {
     
     func createAccount() {
         guard validation() else {
-            print("Failed registered")
             return
         }
-        print("Successfully registered")
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
             guard let userId = result?.user.uid else {
                 return
             }
             
             self?.insertUserRecord(id: userId)
-            print("User id for: ", userId)
         }
     }
     

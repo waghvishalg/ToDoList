@@ -5,8 +5,8 @@
 //  Created by Vishal Wagh on 04/01/24.
 //
 
-import Foundation
 import FirebaseAuth
+import Foundation
 
 class LoginViewViewModel: ObservableObject {
     @Published var email = ""
@@ -18,7 +18,6 @@ class LoginViewViewModel: ObservableObject {
     func login() {
         guard validate() else { return }
         Auth.auth().signIn(withEmail: email, password: password)
-        print("Successfully login")
     }
     
     func validate() -> Bool{
