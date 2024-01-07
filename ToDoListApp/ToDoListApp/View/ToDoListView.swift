@@ -23,6 +23,12 @@ struct ToDoListView: View {
             VStack {
                 List(items) { item in
                     ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button("Delete") {
+                                
+                            }
+                            .background(Color.red)
+                        }
                 }
                 .listStyle(PlainListStyle())
             }
