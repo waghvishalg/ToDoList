@@ -24,10 +24,10 @@ struct ToDoListItemView: View {
             Spacer()
             
             Button {
-                // mark action of task completion
-                viewModel.markDelete(item: item)
+                viewModel.markCompleted(item: item)
             } label: {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                    .foregroundColor(.orange)
             }
         }
     }
